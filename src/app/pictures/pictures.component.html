@@ -1,0 +1,6 @@
+<ol *ngFor="let image of imageUrl">
+    <li (click)="imageselect(image.imageUrl)"><img style="width: 100px;" src="{{image.imageUrl}}"></li>
+</ol>
+
+
+<app-picture-details [lastImage]="selectedImage"></app-picture-details>
